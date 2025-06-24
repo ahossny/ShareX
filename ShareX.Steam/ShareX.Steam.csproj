@@ -1,8 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+<<<<<<< HEAD
     <TargetFramework>net8.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <PlatformTarget>arm64</PlatformTarget>
+=======
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+>>>>>>> 9063c2ad1708237774d8e3836bdc816905a4f9eb
     <AssemblyName>ShareX_Launcher</AssemblyName>
     <ApplicationIcon>ShareX_Icon.ico</ApplicationIcon>
     <UseWindowsForms>true</UseWindowsForms>
@@ -10,7 +15,7 @@
     <RuntimeIdentifiers>win-x64;win-arm64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Management" />
+    <PackageReference Include="System.Management" Version="9.0.6" />
   </ItemGroup>
   <ItemGroup>
     <None Update="steam_appid.txt">
